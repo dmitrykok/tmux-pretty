@@ -257,7 +257,7 @@ tmux_conf_theme_right_separator_sub=""
 #     - #{username_ssh}
 tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} "
 #tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} "
-tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , /:#(df -h | grep '/dev/mapper/crypt-root' | grep -E -o '([0-9]{2}\%)'):Use - /data:#(df -h | grep '/dev/mapper/nvme1n1_crypt' | grep -E -o '([0-9]{2}\%)'):Use , #(time_prompt.pyc) | #{username}#{root} | #{hostname} "
+tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , /:#(df -h | grep '/dev/mapper/crypt-root' | grep -E -o '([0-9]{2}\%)'):Use - /data:#(df -h | grep '/dev/mapper/nvme1n1_crypt' | grep -E -o '([0-9]{2}\%)'):Use , #(time_prompt.bin) | #{username}#{root} | #{hostname} "
 
 # status left style
 tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
